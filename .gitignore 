@@ -1,0 +1,17 @@
+# Ignore virtual environments
+venv/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore build artifacts
+__pycache__/
+
+# Ignore chromedriver-mac-x64 directory
+chromedriver-mac-x64/
+
+# Ignore chromedriver-mac-x64.zip file
+chromedriver-mac-x64.zip
+
+# Ignore qodana.yaml file
+qodana.yaml
