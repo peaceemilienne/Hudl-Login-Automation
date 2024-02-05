@@ -6,12 +6,10 @@ This project automates functional tests for the login page on [hudl.com](https:/
 
 Refer to [Automated Tests](#automated-tests) for details and [Running Tests](#running-tests) for running tests in the specified environment.
 
-**Note:** Verify your environment matches the specified dependencies and browser versions before running tests.
-
 
 ### Automated Tests
 
-This project includes a comprehensive set of automated tests to ensure the functionality and security of the login system. The tests cover various scenarios to provide thorough validation.
+This project includes a comprehensive set of automated tests to ensure the functionality of the hudl login form. The tests cover various scenarios to provide thorough validation.
 
 #### Test Scenarios:
 
@@ -25,7 +23,7 @@ This project includes a comprehensive set of automated tests to ensure the funct
 
 3. **Validate Case Sensitivity:**
    - [ ] Ensure case sensitivity isn't applied to the email, allowing users to log in with a capital letter email and a valid password.
-   - [ ] Confirm that case sensitivity is applied to the email, requiring users to enter the correct case; otherwise, the password is considered invalid.
+   - [ ] Confirm that case sensitivity is applied to the password, requiring users to enter the correct case; otherwise, the password is considered invalid.
 
 4. **Validate Empty Fields:**
    - [ ] Verify that users cannot log in with empty fields, and an appropriate error message is displayed.
@@ -62,11 +60,10 @@ This directory contains the core implementation of the project.
     - `test_hudl.py`: Main test module that runs all the test cases.
 
 #### `config.py`
-Configuration file containing parameters and settings for the project.
- the Selenium WebDriver.
+Configuration file containing parameters for the project.
 
 #### `utilities/`
-Utility functions and setup scripts.
+Utility setup scripts.
 
 - **`setup_webdriver.py`**: Script for setting up the WebDriver for browser automation.
 
